@@ -56,6 +56,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          sudo docker pull sergey/yacodetsv.di3.ru
+          sudo docker pull tolmachevsv/yacodetsv.di3.ru
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 sergey/yacodetsv.di3.ru
+          sudo docker run --rm -d -p 5000:5000 tolmachevsv/yacodetsv.di3.ru
